@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileView" customModule="Netology_IB_Instruments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bender-3" translatesAutoresizingMaskIntoConstraints="NO" id="24k-EQ-4sS">
+                    <rect key="frame" x="10" y="69" width="150" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="WzA-hU-tJX"/>
+                        <constraint firstAttribute="height" constant="200" id="mxu-cw-lcI"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="196" translatesAutoresizingMaskIntoConstraints="NO" id="rRe-cf-Khf">
+                    <rect key="frame" x="170" y="69" width="213" height="30"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ION-xo-R7f">
+                    <rect key="frame" x="170" y="154" width="213" height="30"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1ok-j1-WEZ">
+                    <rect key="frame" x="10" y="279" width="367" height="549"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STW-rW-gi3">
+                    <rect key="frame" x="170" y="239" width="209" height="30"/>
+                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rRe-cf-Khf" secondAttribute="trailing" constant="10" id="07u-BE-o5O"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="STW-rW-gi3" secondAttribute="trailing" constant="10" id="2I9-eQ-gYm"/>
+                <constraint firstItem="rRe-cf-Khf" firstAttribute="leading" secondItem="24k-EQ-4sS" secondAttribute="trailing" constant="10" id="3x9-sn-NcE"/>
+                <constraint firstItem="rRe-cf-Khf" firstAttribute="leading" secondItem="24k-EQ-4sS" secondAttribute="trailing" constant="10" placeholder="YES" id="8b9-YD-Cps"/>
+                <constraint firstItem="24k-EQ-4sS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="9QA-bX-yTg"/>
+                <constraint firstItem="1ok-j1-WEZ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" placeholder="YES" id="D5R-Iw-fHG"/>
+                <constraint firstItem="24k-EQ-4sS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="DmN-pY-I9C"/>
+                <constraint firstItem="ION-xo-R7f" firstAttribute="leading" secondItem="24k-EQ-4sS" secondAttribute="trailing" constant="10" id="G6P-fm-HSz"/>
+                <constraint firstItem="24k-EQ-4sS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" placeholder="YES" id="Ijv-el-5j8"/>
+                <constraint firstItem="1ok-j1-WEZ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="10" id="KWv-2Z-gSy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1ok-j1-WEZ" secondAttribute="trailing" constant="10" id="NTh-RK-Hed"/>
+                <constraint firstItem="ION-xo-R7f" firstAttribute="top" secondItem="rRe-cf-Khf" secondAttribute="bottom" constant="55" id="QCQ-3G-36T"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ION-xo-R7f" secondAttribute="trailing" constant="10" id="UK9-MO-Ylk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1ok-j1-WEZ" secondAttribute="trailing" constant="16" id="YAH-a3-gzG"/>
+                <constraint firstItem="rRe-cf-Khf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="ZPC-Hh-jHF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="STW-rW-gi3" secondAttribute="trailing" constant="14" id="fbJ-qQ-abu"/>
+                <constraint firstItem="STW-rW-gi3" firstAttribute="leading" secondItem="24k-EQ-4sS" secondAttribute="trailing" constant="10" id="oDr-Z1-JlE"/>
+                <constraint firstItem="24k-EQ-4sS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="suT-Ck-Azk"/>
+                <constraint firstItem="1ok-j1-WEZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" placeholder="YES" id="tmc-mS-eHc"/>
+                <constraint firstItem="STW-rW-gi3" firstAttribute="top" secondItem="ION-xo-R7f" secondAttribute="bottom" constant="55" id="vcE-TB-o4n"/>
+                <constraint firstItem="1ok-j1-WEZ" firstAttribute="top" secondItem="24k-EQ-4sS" secondAttribute="bottom" constant="10" id="vza-lk-VxT"/>
+                <constraint firstItem="1ok-j1-WEZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="zYY-rq-Q0s"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Ijv-el-5j8"/>
+                    <exclude reference="8b9-YD-Cps"/>
+                    <exclude reference="D5R-Iw-fHG"/>
+                    <exclude reference="tmc-mS-eHc"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="biographyText" destination="1ok-j1-WEZ" id="yB4-hF-wCv"/>
+                <outlet property="cityLabel" destination="STW-rW-gi3" id="iDN-ZJ-jFj"/>
+                <outlet property="dateLabel" destination="ION-xo-R7f" id="jyZ-Ws-i7t"/>
+                <outlet property="nameLabel" destination="rRe-cf-Khf" id="yUO-ai-Ayn"/>
+                <outlet property="photoImage" destination="24k-EQ-4sS" id="cZT-Tp-VRG"/>
+            </connections>
+            <point key="canvasLocation" x="54.198473282442748" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bender-3" width="736" height="981"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
